@@ -9,6 +9,7 @@
   --gold-dark: #A68838;
   --line: #ECEFF3;
   --overlay: rgba(255, 255, 255, 0.8);
+  /* Nada */
 
   /* Typography Scale (fluid) */
   --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
