@@ -1,0 +1,37 @@
+/* [project]/app/components/MagneticButton.module.css [app-client] (css) */
+.MagneticButton-module__50zloa__magneticButton {
+  will-change: transform;
+  position: relative;
+  overflow: hidden;
+}
+
+.MagneticButton-module__50zloa__ripple {
+  pointer-events: none;
+  background: #fff9;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: .6s ease-out MagneticButton-module__50zloa__rippleEffect;
+  position: absolute;
+  transform: translate(-50%, -50%)scale(0);
+}
+
+@keyframes MagneticButton-module__50zloa__rippleEffect {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%)scale(20);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .MagneticButton-module__50zloa__magneticButton {
+    will-change: auto;
+  }
+
+  .MagneticButton-module__50zloa__ripple {
+    opacity: 0;
+    animation: none;
+  }
+}
+
+/*# sourceMappingURL=app_components_MagneticButton_module_css_bad6b30c._.single.css.map*/

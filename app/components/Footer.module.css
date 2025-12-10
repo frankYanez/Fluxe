@@ -1,0 +1,123 @@
+.footer {
+    background: var(--ink);
+    color: rgba(255, 255, 255, 0.8);
+    padding: var(--space-4xl) 0 var(--space-xl);
+    margin-top: var(--space-4xl);
+}
+
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-2xl);
+    margin-bottom: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    font-size: var(--text-xl);
+    font-weight: 700;
+}
+
+.logoText {
+    color: var(--bg);
+}
+
+.logoAccent {
+    color: var(--gold);
+    font-weight: 400;
+}
+
+.tagline {
+    font-size: var(--text-sm);
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 280px;
+    margin: 0;
+}
+
+.social {
+    display: flex;
+    gap: var(--space-sm);
+    margin-top: var(--space-sm);
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.6);
+    transition: all var(--transition-base);
+}
+
+.socialLink:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    transform: translateY(-2px);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.linksTitle {
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: var(--bg);
+    margin: 0;
+}
+
+.linksList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.linksList a {
+    font-size: var(--text-sm);
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition-base);
+}
+
+.linksList a:hover {
+    color: var(--gold);
+}
+
+.bottom {
+    padding-top: var(--space-xl);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.copyright {
+    font-size: var(--text-sm);
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+}

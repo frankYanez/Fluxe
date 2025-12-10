@@ -1,0 +1,100 @@
+.header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--space-3xl);
+}
+
+.title {
+    margin-bottom: var(--space-md);
+}
+
+.description {
+    font-size: var(--text-lg);
+    color: var(--muted);
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+    margin-bottom: var(--space-3xl);
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+}
+
+.card {
+    padding: var(--space-xl);
+    border: 1px solid rgba(236, 239, 243, 0.5);
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(15, 17, 21, 0.06);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(199, 160, 70, 0.05), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.card:hover {
+    border-color: rgba(199, 160, 70, 0.4);
+    box-shadow: 0 20px 60px rgba(199, 160, 70, 0.15), 0 0 0 1px rgba(199, 160, 70, 0.1);
+    transform: translateY(-8px) scale(1.02);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(199, 160, 70, 0.1), rgba(199, 160, 70, 0.05));
+    border-radius: 1rem;
+    color: var(--gold);
+    margin-bottom: var(--space-md);
+}
+
+.cardTitle {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-sm);
+    color: var(--ink);
+}
+
+.cardDescription {
+    font-size: var(--text-base);
+    color: var(--muted);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.cta {
+    text-align: center;
+}

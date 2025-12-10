@@ -1,0 +1,164 @@
+/* [project]/app/components/PlanCard.module.css [app-client] (css) */
+.PlanCard-module__xeu5aW__planCard {
+  -webkit-backdrop-filter: blur(12px);
+  padding: var(--space-2xl);
+  gap: var(--space-xl);
+  background: #ffffffbf;
+  border: 2px solid #eceff399;
+  border-radius: 2rem;
+  flex-direction: column;
+  transition: all .5s cubic-bezier(.34, 1.56, .64, 1);
+  display: flex;
+  position: relative;
+  box-shadow: 0 10px 40px #0f11150d;
+}
+
+.PlanCard-module__xeu5aW__planCard:hover {
+  border-color: #c7a04699;
+  transform: translateY(-8px)scale(1.01);
+  box-shadow: 0 20px 60px #c7a04626, 0 0 0 1px #c7a0461a;
+}
+
+.PlanCard-module__xeu5aW__planCard.PlanCard-module__xeu5aW__featured {
+  border-color: var(--gold);
+  box-shadow: var(--shadow-gold);
+  position: relative;
+  overflow: hidden;
+}
+
+.PlanCard-module__xeu5aW__planCard.PlanCard-module__xeu5aW__featured:before {
+  content: "";
+  background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+  border-radius: 1.5rem;
+  padding: 2px;
+  animation: 3s linear infinite PlanCard-module__xeu5aW__shimmerBorder;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+  -webkit-mask-position: 0 0, 0 0;
+  mask-position: 0 0, 0 0;
+  -webkit-mask-size: auto, auto;
+  mask-size: auto, auto;
+  -webkit-mask-repeat: repeat, repeat;
+  mask-repeat: repeat, repeat;
+  -webkit-mask-clip: content-box, border-box;
+  mask-clip: content-box, border-box;
+  -webkit-mask-origin: content-box, border-box;
+  mask-origin: content-box, border-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+@keyframes PlanCard-module__xeu5aW__shimmerBorder {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: 0%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .PlanCard-module__xeu5aW__planCard.PlanCard-module__xeu5aW__featured:before {
+    animation: none;
+  }
+}
+
+.PlanCard-module__xeu5aW__badge {
+  background: var(--gold);
+  color: var(--bg);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  border-radius: 9999px;
+  padding: .375rem .75rem;
+  font-weight: 600;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.PlanCard-module__xeu5aW__header {
+  gap: var(--space-sm);
+  flex-direction: column;
+  display: flex;
+}
+
+.PlanCard-module__xeu5aW__name {
+  font-size: var(--text-2xl);
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.PlanCard-module__xeu5aW__priceContainer {
+  align-items: baseline;
+  gap: .25rem;
+  display: flex;
+}
+
+.PlanCard-module__xeu5aW__price {
+  font-size: var(--text-4xl);
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.PlanCard-module__xeu5aW__period {
+  font-size: var(--text-base);
+  color: var(--muted);
+}
+
+.PlanCard-module__xeu5aW__description {
+  font-size: var(--text-sm);
+  color: var(--muted);
+  margin: 0;
+}
+
+.PlanCard-module__xeu5aW__features {
+  gap: var(--space-sm);
+  flex-direction: column;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.PlanCard-module__xeu5aW__feature {
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--ink);
+  display: flex;
+}
+
+.PlanCard-module__xeu5aW__feature.PlanCard-module__xeu5aW__notIncluded {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.PlanCard-module__xeu5aW__icon {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.PlanCard-module__xeu5aW__feature.PlanCard-module__xeu5aW__notIncluded .PlanCard-module__xeu5aW__icon {
+  color: var(--muted);
+}
+
+.PlanCard-module__xeu5aW__cta {
+  justify-content: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=app_components_PlanCard_module_css_bad6b30c._.single.css.map*/

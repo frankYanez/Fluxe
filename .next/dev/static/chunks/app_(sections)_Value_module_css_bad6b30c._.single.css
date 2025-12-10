@@ -1,0 +1,99 @@
+/* [project]/app/(sections)/Value.module.css [app-client] (css) */
+.Value-module__WrRHyW__header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--space-3xl);
+}
+
+.Value-module__WrRHyW__title {
+  margin-bottom: var(--space-md);
+}
+
+.Value-module__WrRHyW__description {
+  font-size: var(--text-lg);
+  color: var(--muted);
+  margin: 0;
+}
+
+.Value-module__WrRHyW__grid {
+  gap: var(--space-xl);
+  margin-bottom: var(--space-3xl);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: grid;
+}
+
+@media (max-width: 1024px) {
+  .Value-module__WrRHyW__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .Value-module__WrRHyW__grid {
+    gap: var(--space-lg);
+    grid-template-columns: 1fr;
+  }
+}
+
+.Value-module__WrRHyW__card {
+  padding: var(--space-xl);
+  -webkit-backdrop-filter: blur(10px);
+  background: #ffffffb3;
+  border: 1px solid #eceff380;
+  border-radius: 1.5rem;
+  transition: all .4s cubic-bezier(.4, 0, .2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px #0f11150f;
+}
+
+.Value-module__WrRHyW__card:before {
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  background: linear-gradient(135deg, #c7a0460d, #0000);
+  transition: opacity .4s;
+  position: absolute;
+  inset: 0;
+}
+
+.Value-module__WrRHyW__card:hover {
+  border-color: #c7a04666;
+  transform: translateY(-8px)scale(1.02);
+  box-shadow: 0 20px 60px #c7a04626, 0 0 0 1px #c7a0461a;
+}
+
+.Value-module__WrRHyW__card:hover:before {
+  opacity: 1;
+}
+
+.Value-module__WrRHyW__icon {
+  width: 64px;
+  height: 64px;
+  color: var(--gold);
+  margin-bottom: var(--space-md);
+  background: linear-gradient(135deg, #c7a0461a, #c7a0460d);
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Value-module__WrRHyW__cardTitle {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-sm);
+  color: var(--ink);
+}
+
+.Value-module__WrRHyW__cardDescription {
+  font-size: var(--text-base);
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.Value-module__WrRHyW__cta {
+  text-align: center;
+}
+
+/*# sourceMappingURL=app_%28sections%29_Value_module_css_bad6b30c._.single.css.map*/

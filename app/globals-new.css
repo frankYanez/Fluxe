@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root {
+    --background: #ffffff;
+    /* Color Palette */
+    --bg: #ffffff;
+    --ink: #0f1115;
+    --muted: #6b7280;
+    --gold: #C7A046;
+    --gold-light: #D4B15F;
+    --gold-dark: #A68838;
+    --gold-500: #C7A046;
+    /* Tailwind-compatible gold color */
+    --line: #ECEFF3;
+    --overlay: rgba(255, 255, 255, 0.8);
+    /* Nada */
+}

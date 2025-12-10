@@ -1,0 +1,108 @@
+.finalCta {
+    background: linear-gradient(135deg, rgba(199, 160, 70, 0.08), rgba(199, 160, 70, 0.03));
+    border-top: 1px solid rgba(236, 239, 243, 0.6);
+    border-bottom: 1px solid rgba(236, 239, 243, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+.finalCta::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(199, 160, 70, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xl);
+    position: relative;
+    z-index: 1;
+    padding: 0 1rem;
+}
+
+.title {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.description {
+    font-size: var(--text-lg);
+    color: var(--muted);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.ctaButton {
+    font-size: var(--text-lg);
+    padding: 1.125rem 2.5rem;
+    margin-top: var(--space-md);
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-lg);
+    margin-top: var(--space-md);
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--text-sm);
+    color: var(--muted);
+    padding: var(--space-sm) var(--space-md);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 9999px;
+    border: 1px solid rgba(236, 239, 243, 0.6);
+    transition: all 0.3s ease;
+}
+
+.benefit:hover {
+    transform: translateY(-2px);
+    border-color: rgba(199, 160, 70, 0.4);
+    box-shadow: 0 4px 12px rgba(199, 160, 70, 0.1);
+}
+
+.benefit svg {
+    color: var(--gold);
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-sm);
+    }
+
+    .title {
+        font-size: var(--text-3xl);
+    }
+
+    .description {
+        font-size: var(--text-base);
+    }
+
+    .ctaButton {
+        width: 100%;
+        max-width: 400px;
+    }
+}

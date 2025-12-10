@@ -1,0 +1,110 @@
+/* [project]/app/(sections)/FinalCta.module.css [app-client] (css) */
+.FinalCta-module__t2KBuq__finalCta {
+  background: linear-gradient(135deg, #c7a04614, #c7a04608);
+  border-top: 1px solid #eceff399;
+  border-bottom: 1px solid #eceff399;
+  position: relative;
+  overflow: hidden;
+}
+
+.FinalCta-module__t2KBuq__finalCta:before {
+  content: "";
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(circle, #c7a0461a 0%, #0000 70%);
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.FinalCta-module__t2KBuq__content {
+  text-align: center;
+  align-items: center;
+  gap: var(--space-xl);
+  z-index: 1;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  position: relative;
+}
+
+.FinalCta-module__t2KBuq__title {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.FinalCta-module__t2KBuq__description {
+  font-size: var(--text-lg);
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.FinalCta-module__t2KBuq__ctaButton {
+  font-size: var(--text-lg);
+  margin-top: var(--space-md);
+  padding: 1.125rem 2.5rem;
+}
+
+.FinalCta-module__t2KBuq__benefits {
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-top: var(--space-md);
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.FinalCta-module__t2KBuq__benefit {
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--text-sm);
+  color: var(--muted);
+  padding: var(--space-sm) var(--space-md);
+  -webkit-backdrop-filter: blur(10px);
+  background: #ffffffb3;
+  border: 1px solid #eceff399;
+  border-radius: 9999px;
+  transition: all .3s;
+  display: flex;
+}
+
+.FinalCta-module__t2KBuq__benefit:hover {
+  border-color: #c7a04666;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px #c7a0461a;
+}
+
+.FinalCta-module__t2KBuq__benefit svg {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .FinalCta-module__t2KBuq__benefits {
+    align-items: center;
+    gap: var(--space-sm);
+    flex-direction: column;
+  }
+
+  .FinalCta-module__t2KBuq__title {
+    font-size: var(--text-3xl);
+  }
+
+  .FinalCta-module__t2KBuq__description {
+    font-size: var(--text-base);
+  }
+
+  .FinalCta-module__t2KBuq__ctaButton {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/*# sourceMappingURL=app_%28sections%29_FinalCta_module_css_bad6b30c._.single.css.map*/

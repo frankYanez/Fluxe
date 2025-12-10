@@ -1,0 +1,133 @@
+/* [project]/app/(sections)/Portfolio.module.css [app-client] (css) */
+.Portfolio-module__MASNjW__header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--space-3xl);
+}
+
+.Portfolio-module__MASNjW__title {
+  margin-bottom: var(--space-md);
+}
+
+.Portfolio-module__MASNjW__description {
+  font-size: var(--text-lg);
+  color: var(--muted);
+  margin: 0;
+}
+
+.Portfolio-module__MASNjW__grid {
+  gap: var(--space-xl);
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  display: grid;
+}
+
+@media (max-width: 1200px) {
+  .Portfolio-module__MASNjW__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .Portfolio-module__MASNjW__grid {
+    gap: var(--space-lg);
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .Portfolio-module__MASNjW__grid {
+    gap: var(--space-md);
+  }
+}
+
+.Portfolio-module__MASNjW__item {
+  -webkit-backdrop-filter: blur(10px);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  background: #fffc;
+  border: 1px solid #eceff399;
+  border-radius: 1.5rem;
+  transition: all .5s cubic-bezier(.34, 1.56, .64, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.Portfolio-module__MASNjW__item:after {
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: linear-gradient(135deg, #c7a0461a, #0000);
+  transition: opacity .5s;
+  position: absolute;
+  inset: 0;
+}
+
+.Portfolio-module__MASNjW__item:hover {
+  border-color: #c7a04680;
+  transform: translateY(-12px)rotateX(2deg)rotateY(-2deg);
+  box-shadow: 0 25px 70px #c7a04633, 0 0 0 1px #c7a04626;
+}
+
+.Portfolio-module__MASNjW__item:hover:after {
+  opacity: 1;
+}
+
+.Portfolio-module__MASNjW__imageWrapper {
+  aspect-ratio: 4 / 3;
+  background: var(--line);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.Portfolio-module__MASNjW__image {
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.Portfolio-module__MASNjW__item:hover .Portfolio-module__MASNjW__image {
+  transform: scale(1.05);
+}
+
+.Portfolio-module__MASNjW__overlay {
+  padding: var(--space-md);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  background: linear-gradient(to top, #0f1115cc, #0000 50%);
+  align-items: flex-end;
+  display: flex;
+  position: absolute;
+  inset: 0;
+}
+
+.Portfolio-module__MASNjW__item:hover .Portfolio-module__MASNjW__overlay {
+  opacity: 1;
+}
+
+.Portfolio-module__MASNjW__category {
+  font-size: var(--text-xs);
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 600;
+}
+
+.Portfolio-module__MASNjW__content {
+  padding: var(--space-lg);
+}
+
+.Portfolio-module__MASNjW__projectTitle {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-xs);
+  color: var(--ink);
+}
+
+.Portfolio-module__MASNjW__projectDescription {
+  font-size: var(--text-sm);
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/*# sourceMappingURL=app_%28sections%29_Portfolio_module_css_bad6b30c._.single.css.map*/
