@@ -29,7 +29,8 @@ export default function MagneticButton({
         const button = buttonRef.current;
         let rafId: number;
 
-        const handleMouseMove = (e: MouseEvent) => {
+        const handleMouseMove = (e: Event) => {
+            if (!(e instanceof MouseEvent)) return;
             const rect = button.getBoundingClientRect();
             const x = e.clientX - rect.left - rect.width / 2;
             const y = e.clientY - rect.top - rect.height / 2;

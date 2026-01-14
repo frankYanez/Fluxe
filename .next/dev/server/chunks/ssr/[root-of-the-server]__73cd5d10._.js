@@ -114,6 +114,7 @@ function MagneticButton({ children, className = '', href, onClick, ariaLabel }) 
         const button = buttonRef.current;
         let rafId;
         const handleMouseMove = (e)=>{
+            if (!(e instanceof MouseEvent)) return;
             const rect = button.getBoundingClientRect();
             const x = e.clientX - rect.left - rect.width / 2;
             const y = e.clientY - rect.top - rect.height / 2;
@@ -184,13 +185,13 @@ function MagneticButton({ children, className = '', href, onClick, ariaLabel }) 
                         }
                     }, ripple.id, false, {
                         fileName: "[project]/app/components/MagneticButton.tsx",
-                        lineNumber: 100,
+                        lineNumber: 101,
                         columnNumber: 21
                     }, this))
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/MagneticButton.tsx",
-            lineNumber: 97,
+            lineNumber: 98,
             columnNumber: 13
         }, this);
     }
@@ -206,13 +207,13 @@ function MagneticButton({ children, className = '', href, onClick, ariaLabel }) 
                     }
                 }, ripple.id, false, {
                     fileName: "[project]/app/components/MagneticButton.tsx",
-                    lineNumber: 114,
+                    lineNumber: 115,
                     columnNumber: 17
                 }, this))
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/MagneticButton.tsx",
-        lineNumber: 111,
+        lineNumber: 112,
         columnNumber: 9
     }, this);
 }
@@ -1251,16 +1252,11 @@ const CardItem = ({ as: Tag = "div", children, className, translateX = 0, transl
             ref.current.style.transform = `translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)`;
         }
     };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Tag, {
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement(Tag, {
         ref: ref,
         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-fit transition duration-200 ease-linear", className),
-        ...rest,
-        children: children
-    }, void 0, false, {
-        fileName: "[project]/app/components/ui/3d-card.tsx",
-        lineNumber: 134,
-        columnNumber: 9
-    }, ("TURBOPACK compile-time value", void 0));
+        ...rest
+    }, children);
 };
 const useMouseEnter = ()=>{
     const context = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"])(MouseEnterContext);

@@ -12,11 +12,8 @@
   "static/chunks/node_modules_robust-predicates_9d01d7bd._.js",
   "static/chunks/node_modules_h3-js_dist_browser_h3-js_es_7fb36d90.js",
   "static/chunks/node_modules_three-globe_dist_three-globe_mjs_ffb492c0._.js",
-  "static/chunks/node_modules_react-reconciler_cjs_react-reconciler_development_a1f1ffcb.js",
-  "static/chunks/d4b1c_modules_react-reconciler_cjs_react-reconciler-constants_development_40d5d979.js",
-  "static/chunks/node_modules_react-reconciler_84eeddb6._.js",
-  "static/chunks/node_modules_@react-three_fiber_dist_6c85a2a5._.js",
-  "static/chunks/node_modules_6e3eb648._.js"
+  "static/chunks/node_modules_@react-three_fiber_dist_6cd14acf._.js",
+  "static/chunks/node_modules_76cf9773._.js"
 ],
     source: "dynamic"
 });

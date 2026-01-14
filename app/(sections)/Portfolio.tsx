@@ -100,7 +100,7 @@ export default function Portfolio() {
                         <motion.div
                             key={idx}
                             className={`${styles.item} portfolio-item`}
-                            variants={itemVariants}
+                            variants={itemVariants as any}
                             whileHover={{
                                 y: -12,
                                 scale: 1.02,

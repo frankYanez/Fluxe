@@ -77,7 +77,7 @@ export default function FinalCta() {
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true, margin: '-100px' }}
-                                variants={benefitVariants}
+                                variants={benefitVariants as any}
                                 whileHover={{
                                     scale: 1.05,
                                     transition: { type: 'spring', stiffness: 400, damping: 10 },

@@ -1,0 +1,32 @@
+
+> fluxe@0.1.0 build
+> next build
+
+   ▲ Next.js 16.0.8 (Turbopack)
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 4.5s
+   Running TypeScript ...
+Failed to compile.
+
+./app/(sections)/Pricing.tsx:111:29
+Type error: Type '{ hidden: { opacity: number; y: number; rotateX: number; }; visible: { opacity: number; y: number; rotateX: number; transition: { type: string; stiffness: number; damping: number; }; }; }' is not assignable to type 'Variants'.
+  Property 'visible' is incompatible with index signature.
+    Type '{ opacity: number; y: number; rotateX: number; transition: { type: string; stiffness: number; damping: number; }; }' is not assignable to type 'Variant'.
+      Type '{ opacity: number; y: number; rotateX: number; transition: { type: string; stiffness: number; damping: number; }; }' is not assignable to type 'TargetAndTransition'.
+        Type '{ opacity: number; y: number; rotateX: number; transition: { type: string; stiffness: number; damping: number; }; }' is not assignable to type '{ transition?: Transition<any> | undefined; transitionEnd?: ResolvedValues | undefined; }'.
+          Types of property 'transition' are incompatible.
+            Type '{ type: string; stiffness: number; damping: number; }' is not assignable to type 'Transition<any> | undefined'.
+              Type '{ type: string; stiffness: number; damping: number; }' is not assignable to type 'TransitionWithValueOverrides<any>'.
+                Type '{ type: string; stiffness: number; damping: number; }' is not assignable to type 'ValueAnimationTransition<any>'.
+                  Types of property 'type' are incompatible.
+                    Type 'string' is not assignable to type 'AnimationGeneratorType | undefined'.
+
+[0m [90m 109 |[39m                             key[33m=[39m{idx}
+ [90m 110 |[39m                             className[33m=[39m[32m"pricing-card"[39m
+[31m[1m>[22m[39m[90m 111 |[39m                             variants[33m=[39m{cardVariants}
+ [90m     |[39m                             [31m[1m^[22m[39m
+ [90m 112 |[39m                             whileHover[33m=[39m{{
+ [90m 113 |[39m                                 y[33m:[39m [33m-[39m[35m10[39m[33m,[39m
+ [90m 114 |[39m                                 scale[33m:[39m [35m1.03[39m[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

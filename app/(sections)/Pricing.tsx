@@ -108,7 +108,7 @@ export default function Pricing() {
                         <motion.div
                             key={idx}
                             className="pricing-card"
-                            variants={cardVariants}
+                            variants={cardVariants as any}
                             whileHover={{
                                 y: -10,
                                 scale: 1.03,

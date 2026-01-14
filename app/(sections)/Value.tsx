@@ -120,7 +120,7 @@ export default function Value() {
                     viewport={{ once: true, margin: '-100px' }}
                 >
                     {services.map((service, idx) => (
-                        <motion.div key={idx} variants={itemVariants}>
+                        <motion.div key={idx} variants={itemVariants as any}>
                             <CardContainer className="value-card">
                                 <CardBody className={`${styles.card} w-auto h-auto`}>
                                     <CardItem
