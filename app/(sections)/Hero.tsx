@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import { useGsapHero } from '@/lib/animations/useGsapHero';
 import MagneticButton from '../components/MagneticButton';
 import { BackgroundBeams } from '../components/ui/background-beams';
@@ -50,12 +51,22 @@ export default function Hero() {
                         Transformamos marcas en experiencias digital memorables
                     </h1>
 
-                    <p className={styles.subtitle}>
+                    <motion.p
+                        className={styles.subtitle}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.5, duration: 0.8 }}
+                    >
                         Estrategias de marketing que combinan creatividad, datos y tecnología
                         para impulsar el crecimiento de tu negocio en el mundo digital
-                    </p>
+                    </motion.p>
 
-                    <div className={styles.ctas}>
+                    <motion.div
+                        className={styles.ctas}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.8, duration: 0.8 }}
+                    >
                         <MagneticButton className="btn btn-primary" href="#contacto">
                             Reservar Estrategia
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,9 +77,14 @@ export default function Hero() {
                         <a href="#portafolio" className="btn btn-secondary">
                             Ver Portafolio
                         </a>
-                    </div>
+                    </motion.div>
 
-                    <div className={styles.stats}>
+                    <motion.div
+                        className={styles.stats}
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 1.2, duration: 0.8 }}
+                    >
                         <div className={styles.stat}>
                             <div className={styles.statValue}>250+</div>
                             <div className={styles.statLabel}>Proyectos</div>
@@ -81,7 +97,7 @@ export default function Hero() {
                             <div className={styles.statValue}>5x</div>
                             <div className={styles.statLabel}>ROI Promedio</div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </Vortex>
         </section>

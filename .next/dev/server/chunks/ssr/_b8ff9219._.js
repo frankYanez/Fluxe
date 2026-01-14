@@ -88,7 +88,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Footer$
 ;
 ;
 const metadata = {
-    title: "AURUM Labs | Agencia de Marketing Digital Premium",
+    title: "FLUXE Labs | Agencia de Marketing Digital Premium",
     description: "Transformamos marcas en experiencias digitales memorables. Estrategias de marketing que combinan creatividad, datos y tecnología para impulsar el crecimiento de tu negocio.",
     keywords: [
         "marketing digital",
@@ -101,19 +101,19 @@ const metadata = {
     ],
     authors: [
         {
-            name: "AURUM Labs"
+            name: "FLUXE Labs"
         }
     ],
     openGraph: {
-        title: "AURUM Labs | Agencia de Marketing Digital Premium",
+        title: "FLUXE Labs | Agencia de Marketing Digital Premium",
         description: "Estrategias de marketing que combinan creatividad, datos y tecnología",
         type: "website",
         locale: "es_ES",
-        siteName: "AURUM Labs"
+        siteName: "FLUXE Labs"
     },
     twitter: {
         card: "summary_large_image",
-        title: "AURUM Labs | Agencia de Marketing Digital Premium",
+        title: "FLUXE Labs | Agencia de Marketing Digital Premium",
         description: "Estrategias de marketing que combinan creatividad, datos y tecnología"
     },
     robots: {
@@ -132,14 +132,14 @@ function RootLayout({ children }) {
                         __html: JSON.stringify({
                             "@context": "https://schema.org",
                             "@type": "Organization",
-                            name: "AURUM Labs",
+                            name: "FLUXE Labs",
                             description: "Agencia de Marketing Digital Premium",
-                            url: "https://aurumlabs.com",
-                            logo: "https://aurumlabs.com/logo.png",
+                            url: "https://FLUXElabs.com",
+                            logo: "https://FLUXElabs.com/logo.png",
                             sameAs: [
-                                "https://linkedin.com/company/aurumlabs",
-                                "https://twitter.com/aurumlabs",
-                                "https://instagram.com/aurumlabs"
+                                "https://linkedin.com/company/FLUXElabs",
+                                "https://twitter.com/FLUXElabs",
+                                "https://instagram.com/FLUXElabs"
                             ]
                         })
                     }

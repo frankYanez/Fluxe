@@ -39,7 +39,7 @@ export default function Footer() {
                     {/* Brand */}
                     <motion.div className={styles.brand} variants={itemVariants}>
                         <div className={styles.logo}>
-                            <span className={styles.logoText}>AURUM</span>
+                            <span className={styles.logoText}>FLUXE</span>
                             <span className={styles.logoAccent}>Labs</span>
                         </div>
                         <p className={styles.tagline}>
@@ -110,7 +110,7 @@ export default function Footer() {
                     transition={{ delay: 0.5 }}
                 >
                     <p className={styles.copyright}>
-                        © {currentYear} AURUM Labs. Todos los derechos reservados.
+                        © {currentYear} FLUXE Labs. Todos los derechos reservados.
                     </p>
                 </motion.div>
             </div>

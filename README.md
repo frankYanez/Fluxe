@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# AURUM Labs - Futuristic Landing Page
+# FLUXE Labs - Futuristic Landing Page
 
 A stunning, high-performance Next.js landing page for a digital marketing agency featuring a clean white background with sophisticated golden accents, GSAP-powered animations, and full accessibility support.
 
@@ -327,7 +327,7 @@ const nextConfig: NextConfig = {
 
 ### Agency Name
 
-Replace "AURUM Labs" throughout:
+Replace "FLUXE Labs" throughout:
 - `app/layout.tsx` - Metadata
 - `app/components/Navbar.tsx` - Logo
 - `app/components/Footer.tsx` - Brand section
@@ -389,7 +389,7 @@ npm run build
 
 ## 📄 License
 
-This project is created for AURUM Labs. Customize as needed for your use case.
+This project is created for FLUXE Labs. Customize as needed for your use case.
 
 ## 🤝 Support
 

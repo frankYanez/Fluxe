@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-        // Solo componentes de Aceternity UI
-        './app/components/ui/**/*.{js,ts,jsx,tsx}',
-        // Secciones que usen componentes de Aceternity
-        './app/(sections)/Features.tsx',
+        './app/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
         extend: {

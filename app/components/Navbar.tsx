@@ -97,7 +97,7 @@ export default function Navbar() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <span className={styles.logoText}>AURUM</span>
+                    <span className={styles.logoText}>FLUXE</span>
                     <span className={styles.logoAccent}>Labs</span>
                 </motion.a>
 

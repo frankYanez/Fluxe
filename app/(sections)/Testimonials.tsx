@@ -10,19 +10,19 @@ const testimonials = [
     {
         name: 'María González',
         role: 'CEO, TechStart',
-        content: 'AURUM Labs transformó completamente nuestra presencia digital. En 6 meses aumentamos nuestras conversiones en un 340% y el ROI superó todas nuestras expectativas.',
+        content: 'FLUXE Labs transformó completamente nuestra presencia digital. En 6 meses aumentamos nuestras conversiones en un 340% y el ROI superó todas nuestras expectativas.',
         rating: 5,
     },
     {
         name: 'Carlos Mendoza',
         role: 'Director Marketing, LuxBrand',
-        content: 'El equipo de AURUM no solo entregó resultados excepcionales, sino que se convirtieron en verdaderos partners estratégicos. Su enfoque basado en datos es impresionante.',
+        content: 'El equipo de FLUXE no solo entregó resultados excepcionales, sino que se convirtieron en verdaderos partners estratégicos. Su enfoque basado en datos es impresionante.',
         rating: 5,
     },
     {
         name: 'Ana Rodríguez',
         role: 'Founder, EcoShop',
-        content: 'Profesionalismo, creatividad y resultados. AURUM Labs nos ayudó a posicionar nuestra marca en un mercado altamente competitivo. Totalmente recomendados.',
+        content: 'Profesionalismo, creatividad y resultados. FLUXE Labs nos ayudó a posicionar nuestra marca en un mercado altamente competitivo. Totalmente recomendados.',
         rating: 5,
     },
 ];
